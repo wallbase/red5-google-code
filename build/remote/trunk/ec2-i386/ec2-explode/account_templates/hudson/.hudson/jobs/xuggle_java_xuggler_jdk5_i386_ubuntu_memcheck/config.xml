@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions class="java.util.concurrent.CopyOnWriteArrayList"/>
+  <description>Application: Xuggle&#xd;
+Component: Java Xuggler&#xd;
+Branch: Trunk&#xd;
+JVM: JDK 1.5&#xd;
+Platform: i386&#xd;
+OS: Linux</description>
+  <logRotator>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>5</numToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.googlecode.GoogleCodeProjectProperty/>
+  </properties>
+  <scm class="hudson.scm.SubversionSCM">
+    <locations>
+      <hudson.scm.SubversionSCM_-ModuleLocation>
+        <remote>http://xuggle.googlecode.com/svn/trunk/java/xuggle-xuggler</remote>
+        <local>workingcopy</local>
+      </hudson.scm.SubversionSCM_-ModuleLocation>
+    </locations>
+    <useUpdate>false</useUpdate>
+    <browser class="hudson.plugins.googlecode.GoogleCodeRepositoryBrowser"/>
+  </scm>
+  <quietPeriod>7200</quietPeriod>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <jdk>JDK5</jdk>
+  <triggers class="vector"/>
+  <builders>
+    <hudson.tasks.Ant>
+      <targets>run-memcheck
+</targets>
+      <antName>Ant7</antName>
+    </hudson.tasks.Ant>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>workingcopy/build/native/i686-pc-linux-gnu/test/**/*.log</artifacts>
+      <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>xuggle_java_xuggler_jdk6_i386_ubuntu,xuggle_java_xuggler_jdk5_i386_winxp</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+    <hudson.tasks.Mailer>
+      <recipients>xuggle-builds@xuggle.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <org.jvnet.hudson.plugins.port__allocator.PortAllocator>
+      <ports>
+        <org.jvnet.hudson.plugins.port__allocator.DefaultPortType>
+          <name>1935</name>
+        </org.jvnet.hudson.plugins.port__allocator.DefaultPortType>
+      </ports>
+    </org.jvnet.hudson.plugins.port__allocator.PortAllocator>
+  </buildWrappers>
+</project>

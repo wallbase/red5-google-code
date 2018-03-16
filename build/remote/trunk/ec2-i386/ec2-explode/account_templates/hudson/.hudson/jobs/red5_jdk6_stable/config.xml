@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions class="java.util.concurrent.CopyOnWriteArrayList"/>
+  <description>This is the official set of red5 stable builds for Java 1.6.  These are only built if all other JDK 1.6 tests pass 100%.&#xd;
+&#xd;
+Application: Red5&#xd;
+Component: Java Server&#xd;
+Branch: Trunk&#xd;
+JVM: JDK 1.6&#xd;
+Platform: i386&#xd;
+OS: Linux</description>
+  <logRotator>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>20</numToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.googlecode.GoogleCodeProjectProperty>
+      <googlecodeWebsite>http://code.google.com/p/red5/</googlecodeWebsite>
+    </hudson.plugins.googlecode.GoogleCodeProjectProperty>
+  </properties>
+  <scm class="hudson.scm.SubversionSCM">
+    <locations>
+      <hudson.scm.SubversionSCM_-ModuleLocation>
+        <remote>http://red5.googlecode.com/svn/java/server/trunk</remote>
+        <local>workingcopy</local>
+      </hudson.scm.SubversionSCM_-ModuleLocation>
+    </locations>
+    <useUpdate>false</useUpdate>
+    <browser class="hudson.plugins.googlecode.GoogleCodeRepositoryBrowser"/>
+  </scm>
+  <quietPeriod>3600</quietPeriod>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <jdk>JDK6</jdk>
+  <triggers class="vector"/>
+  <builders>
+    <hudson.tasks.Ant>
+      <targets>dist-archive</targets>
+      <antName>Ant7</antName>
+    </hudson.tasks.Ant>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>workingcopy/*.zip,workingcopy/*.tar.gz,workingcopy/dist/red5.jar</artifacts>
+      <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.Fingerprinter>
+      <targets>workingcopy/dist/red5.jar</targets>
+      <recordBuildArtifacts>true</recordBuildArtifacts>
+    </hudson.tasks.Fingerprinter>
+    <hudson.tasks.JavadocArchiver>
+      <javadocDir>workingcopy/doc/api</javadocDir>
+      <keepAll>true</keepAll>
+    </hudson.tasks.JavadocArchiver>
+    <hudson.tasks.Mailer>
+      <recipients>red5-builds@googlegroups.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <org.jvnet.hudson.plugins.port__allocator.PortAllocator>
+      <ports>
+        <org.jvnet.hudson.plugins.port__allocator.DefaultPortType>
+          <name>1935</name>
+        </org.jvnet.hudson.plugins.port__allocator.DefaultPortType>
+      </ports>
+    </org.jvnet.hudson.plugins.port__allocator.PortAllocator>
+  </buildWrappers>
+</project>

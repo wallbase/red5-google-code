@@ -1,0 +1,78 @@
+@import url(code.css);
+
+/* Styles for the page editing form */
+#edit #rows { float: right; font-size: 80% }
+#edit #rows select { font-size: 90% }
+#edit #text { clear: both; width: 100% }
+#edit .wikitoolbar { float: left; }
+#changeinfo { padding: .5em }
+#changeinfo .field { float: left; margin: 0 1em .5em 0 }
+#changeinfo br { clear: left }
+#changeinfo .options { padding: 0 0 1em 1em }
+#changeinfo .options, #changeinfo .buttons { clear: left }
+#delete, #save { margin-left: 6em }
+#preview {
+ background: #f4f4f4
+ margin: 1em 0 2em;
+ overflow: auto;
+}
+#template { vertical-align: middle; padding-top: 1em; }
+
+/* Diff view */
+#overview .multi { color: #999 }
+#overview .ipnr { color: #999; font-size: 80% }
+#overview .comment { padding: 1em 0 0 }
+
+@media print { 
+ th.diff, td.diff { display: none }
+}
+
+/* Styles for the TracGuideToc wikimacro */
+.wiki-toc {
+ padding: .5em 1em;
+ margin: 0 0 2em 1em;
+ float: right;
+ border: 1px outset #ddc;
+ font-size: 85%;
+ position: relative;
+}
+.wiki-toc h4 { font-size: 12px; margin: 0 }
+.wiki-toc ul, .wiki-toc ol { list-style: none; padding: 0; margin: 0 }
+.wiki-toc ul ul, .wiki-toc ol ol { padding-left: 1.2em }
+.wiki-toc li { margin: 0; padding: 0 }
+.wiki-toc .active {  position: relative; }
+
+
+.noteboxwarn {
+background-color:#C5CCC7;
+background-image:url(../warning.png);
+border: 1px solid red;
+}
+.noteboxtip {
+background-color:#C5CCC7;
+background-image:url(../tip.png);
+border: 1px solid green;
+}
+.noteboxnote {
+background-color:#C5CCC7;
+background-image:url(../note.png);
+border: 1px solid #CCCCCC;
+}
+
+
+.noteboxbase, .noteboxwarn, .noteboxnote, .noteboxtip {
+-moz-border-radius-bottomleft:20px;
+-moz-border-radius-bottomright:20px;
+-moz-border-radius-topleft:20px;
+-moz-border-radius-topright:20px;
+background-position:20px 50%;
+background-repeat:no-repeat;
+border-collapse:collapse;
+margin:2em;
+min-height:40px;
+padding:15px 20px 15px 80px;
+text-align:justify;
+vertical-align:middle;
+width:70% !important;
+}
+

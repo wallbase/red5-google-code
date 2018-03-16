@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions class="java.util.concurrent.CopyOnWriteArrayList"/>
+  <description>Application: Red5&#xd;
+Component: Flash Self Test&#xd;
+Branch: Trunk&#xd;
+JVM: N/A&#xd;
+Flex: 3.1&#xd;
+Platform: i386&#xd;
+OS: Linux</description>
+  <logRotator>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>5</numToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.googlecode.GoogleCodeProjectProperty/>
+  </properties>
+  <scm class="hudson.scm.SubversionSCM">
+    <locations>
+      <hudson.scm.SubversionSCM_-ModuleLocation>
+        <remote>http://red5.googlecode.com/svn/flash/trunk/selftest</remote>
+        <local>workingcopy</local>
+      </hudson.scm.SubversionSCM_-ModuleLocation>
+    </locations>
+    <useUpdate>false</useUpdate>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <jdk>JDK5</jdk>
+  <triggers class="vector">
+    <hudson.triggers.SCMTrigger>
+      <spec>0,15,30,45 * * * *</spec>
+    </hudson.triggers.SCMTrigger>
+    <hudson.triggers.TimerTrigger>
+      <spec># Run every morning at 1am
+0 1 * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <builders>
+    <hudson.tasks.Ant>
+      <targets>clean
+install
+compile-tests
+doc</targets>
+      <antName>Ant7</antName>
+    </hudson.tasks.Ant>
+  </builders>
+  <publishers>
+    <hudson.tasks.JavadocArchiver>
+      <javadocDir>workingcopy/doc/flash/api</javadocDir>
+      <keepAll>true</keepAll>
+    </hudson.tasks.JavadocArchiver>
+    <hudson.tasks.Mailer>
+      <recipients>red5-builds@googlegroups.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers/>
+</project>

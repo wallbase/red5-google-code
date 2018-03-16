@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-catalog>
+  <archetypes>   
+    <!-- Server -->
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC2</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4371</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4380</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4388</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4388-java6</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4415</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4415-java6</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4424</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4424-java6</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4439</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-RC3-r4439-java6</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0-java6</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.1</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.1-java6</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-SNAPSHOT</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-RC1</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-RC2</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-RC3</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-RC4</version>
+      <description>Red5 core server</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-M1</version>
+      <description>Red5 core server</description>
+    </archetype>		
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.2-RELEASE</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.3-SNAPSHOT</version>
+      <description>Red5 core server</description>
+    </archetype>    
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.3-RELEASE</version>
+      <description>Red5 core server</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>1.0.4-SNAPSHOT</version>
+    </archetype>    
+    <!-- Client -->
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC2</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC3-r4388</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC3-r4388-java6</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC3-r4426</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC3-r4426-java6</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC3-r4439</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-RC3-r4439-java6</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0-java6</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0.2-SNAPSHOT</version>
+      <description>Red5 client</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0.2-RC1</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0.3-SNAPSHOT</version>
+      <description>Red5 client</description>
+    </archetype>
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-client</artifactId>
+      <version>1.0.3-RELEASE</version>
+      <description>Red5 client</description>
+    </archetype>
+    <!-- IO -->
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-io</artifactId>
+      <version>1.0.2</version>
+      <description>Red5 IO Library</description>
+    </archetype>	
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-io</artifactId>
+      <version>1.0.3</version>
+      <description>Red5 IO Library</description>
+    </archetype>  
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-io</artifactId>
+      <version>1.0.3-SNAPSHOT</version>
+      <description>Red5 IO Library</description>
+    </archetype>  
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-io</artifactId>
+      <version>1.0.4-SNAPSHOT</version>
+      <description>Red5 IO Library</description>
+    </archetype> 
+    <!-- Service -->
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-service</artifactId>
+      <version>1.0.2-RELEASE</version>
+      <description>Red5 service</description>
+    </archetype> 
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-service</artifactId>
+      <version>1.0.3-RELEASE</version>
+      <description>Red5 service</description>
+    </archetype>
+    <!-- Common -->
+    <archetype>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server-common</artifactId>
+      <version>1.0.4-SNAPSHOT</version>
+      <description>Red5 server common</description>
+    </archetype> 
+  </archetypes>
+</archetype-catalog>
